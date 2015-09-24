@@ -10,12 +10,12 @@
 \RequirePackage{fontawesome}
 
 \RequirePackage[
-	a4paper,
-	left=0.8in,
-	right=0.8in,
-	top=0.70in,
-	bottom=0.55in,
-	nohead
+  a4paper,
+  left=0.8in,
+  right=0.8in,
+  top=0.70in,
+  bottom=0.55in,
+  nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
@@ -52,10 +52,14 @@
 
 \newcommand{\name}[1]{
   \centerline{\Huge{#1}}
-  \vspace{1.25ex}
+  \vspace{1.5ex}
+}
+\newcommand{\focus}[2]{
+  \centerline{\large{{#1}\textperiodcentered {#2}}}
+  \vspace{1.5ex}
 }
 \newcommand{\contactInfo}[3]{
-  \centerline{\large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}} \textperiodcentered \faLink\ {#3}}}
+  \centerline{\large{\faEnvelopeO\ {#1}\textperiodcentered \faMobile\ {#2}\textperiodcentered \faLinkedin\ \faGithub\ {#3}}}
   \vspace{1.5ex}
 }
 \newcommand{\basicContactInfo}[3]{
