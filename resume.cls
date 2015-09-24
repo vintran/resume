@@ -66,7 +66,7 @@
   \centerline{\large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}}}}
   \vspace{1.5ex}
 }
-\newcommand{\role}[2]{
-  {\par \textit{#1} ~ #2 \par}
+\newcommand{\company}[2]{
+  {\par #1 \hfill #2 \par}
   \vspace{0.85ex}
 }
