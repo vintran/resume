@@ -2,6 +2,9 @@
 \ProvidesClass{resume}[2015/05/25 An elegant Résumé class]
 \LoadClass[11pt]{article}
 
+% package to load hyperlinks
+\usepackage{hyperref}
+
 % disable indent globally
 \setlength{\parindent}{0pt} 
 % some general improvements, defines the XeTeX logo
@@ -11,10 +14,10 @@
 
 \RequirePackage[
   a4paper,
-  left=0.8in,
-  right=0.8in,
-  top=0.70in,
-  bottom=0.55in,
+  left=0.5in,
+  right=0.5in,
+  top=0.5in,
+  bottom=0.5in,
   nohead
 ]{geometry}
 
@@ -59,7 +62,7 @@
   \vspace{1.5ex}
 }
 \newcommand{\contactInfo}[3]{
-  \centerline{\large{\faEnvelopeO\ {#1}\textperiodcentered \faMobile\ {#2}\textperiodcentered \faLinkedin\ \faGithub\ {#3}}}
+  \centerline{\large{\href{mailto:#1}{\faEnvelopeO}\ {#1}\textperiodcentered \href{tel:#2}{\faPhone}\ {#2}\textperiodcentered \href{https://www.linkedin.com/in/#3}{\faLinkedin}\ \href{https://github.com/#3}{\faGithub}\ {#3}}}
   \vspace{1.5ex}
 }
 \newcommand{\basicContactInfo}[3]{
@@ -68,5 +71,5 @@
 }
 \newcommand{\company}[2]{
   {\par #1 \hfill #2 \par}
-  \vspace{0.85ex}
+  \vspace{0.5ex}
 }

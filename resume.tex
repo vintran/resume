@@ -1,6 +1,10 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+\usepackage{comment}
+\usepackage{multicol}
+\usepackage{hyperref}
+%\usepackage{wrapfig}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
  
@@ -8,78 +12,116 @@
 \pagenumbering{gobble} % suppress displaying page number
 
 \name{Oswin Rodrigues}
-\focus{Hardware}{Embedded}
+%\focus{Hardware}{Embedded}
 
 % {E-mail}{mobilephone}{homepage}
-\contactInfo{orodrigues@uwaterloo.ca}{(+1) 226-606-6220}{oswinrodrigues}
+\contactInfo{orodrigues@uwaterloo.ca}{+1-226-606-6220}{oswinrodrigues}
 % {E-mail}{mobilephone}
 %\basicContactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}
- 
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{University of Waterloo}, Waterloo, ON}{2013 -- Present}
-Mechatronics Engineering\par
-Candidate for BASc, Class of 2018
 
-\section{\faCogs\ Tools}
+\section{\faWrench\ Tools}
+
 \begin{itemize}[parsep=0.5ex]
   \item %Code: 
-  C++\textperiodcentered 
   C\textperiodcentered 
-  Python\textperiodcentered 
-  JavaScript\textperiodcentered
+  C++\textperiodcentered
+  Python\textperiodcentered
   Ladder Logic\textperiodcentered
-  MATLAB\textperiodcentered
-  Assembly\textperiodcentered
-  VHDL
-  \item %Circuit Prototyping and Probing:
+  JavaScript\textperiodcentered
+  MATLAB%\textperiodcentered
+  %Assembly\textperiodcentered
+  %VHDL
+  \item %Circuit:
+  Arduino\textperiodcentered
   Soldering Iron\textperiodcentered
-  Breadboard\textperiodcentered
-  Multimeter\textperiodcentered
-  Oscilloscope
-  \item %PCB Schematics and Layouts:
+  Multimeter \& Oscilloscope\textperiodcentered
   Upverter\textperiodcentered
   EAGLE
-  \item %3D CAD Experience:
-  Solidworks\textperiodcentered
-  AutoCAD
+  %\item %3D CAD Experience:
+  %Solidworks\textperiodcentered
+  %AutoCAD
 \end{itemize}
 
-\section{\faUsers\ Experience}
+\section{\faLineChart\ Experience}
+
 \datedsubsection{\textbf{EDA Engineer Intern}}{May -- Aug 2015}
-\company{Upverter Inc.}{Toronto, ON}
-\textit{Developing and debugging PCB CAD engine features.}
+\company{\textbf{Upverter Inc.}}{Toronto, ON}
+\textit{Enhancing PCB CAD tool features in software (JavaScript, Python) and hardware avenues.}
 \begin{itemize}
   \item Created and verified symbols and footprints for 150+ electronic components.
-  \item 
-  \item 
+  \item Implemented component-tagging feature, using pin names to deduce functionality.
+  \item Adjusted prioritization of design rules in layout constraint manager.
+  \item Fixed incorrect drawing and positioning of constraint violation layout bodies.
+  \item Refactored click event-listening logic in schematic net-drawing tool.
+  \item Corrected book-keeping errors in pin manager for tracking connection mappings.
+  \item Facilitated BGA footprint generator's omitting specific letters during row enumeration.
 \end{itemize}
 
-\datedsubsection{\textbf{Research Assistant}}{Jan -- Apr 2014}
-\company{University of Waterloo}{Waterloo, ON}
+\datedsubsection{\textbf{Research Assistant}}{Feb -- Apr 2014}
+\company{\textbf{University of Waterloo}}{Waterloo, ON}
 \textit{Using ROS-run Turtlebot\textsuperscript{TM} for social navigation research purposes.}
 \begin{itemize}
-  \item Wrote C++ and Python nodes to implement basic navigation stack on Turtlebot. This published sensor, odometry and transform messages to mobile base.
-  \item Reused open-source code for advanced algorithms: person-detection, SLAM-based navigation, etc.
-  \item Troubleshot various problems arising due to less-than-thorough understanding of ROS.
+  \item Wrote C++ and Python nodes to implement basic navigation stack on Turtlebot. 
+  \item Published sensor, odometry and transform messages to mobile base.
+  \item Tweaked existing open-source code for advanced algorithms: person-detection, SLAM navigation.
+  %\item Troubleshot various problems arising due to incomplete-but-improving familiarity with ROS.
 \end{itemize}
 
+\begin{comment}
 \datedsubsection{\textbf{Mechanical Design Co-op}}{Sep -- Dec 2014}
-\company{Prodomax Automation Inc.}{Barrie, ON}
+\company{\textbf{Prodomax Automation Inc.}}{Barrie, ON}
 \textit{Designing jigs and fixtures in Solidworks for automotive part-assembly stations.}
 \begin{itemize}
   \item Modeled custom tooling in two stations for assembling a vehicle's seat track mechanism. One inserted an anti-collapse spacer and the other stamp-pressed a bushing.
-  \item Detailed and ballooned numerous part and assembly drawings respectively.
+  \item Detailed and ballooned numerous part and assembly drawings extensively.
+\end{itemize}
+\end{comment}
+
+\section{\faFlask\ Projects}
+
+\datedsubsection{\textbf{UW Robotics Team \& WAVE\textsuperscript{1}
+%\footnote{Waterloo Autonomous Vehicles}\
+ Lab}}{Jan -- Apr 2015, Sept 2015 -- Present}
+\textsuperscript{1}\textit{Waterloo Autonomous Vehicles}
+\begin{itemize}
+  \item Modified and updated EAGLE schematics and layouts for Arduino motor shield. 
+  \item Soldered different SMT and THT components onto multiple bare shields.
+  \item Currently designing and implementing a wireless (RF) e-stop mechanism for racing robot.
+  \item Currently revamping and parts-sourcing a Mars Rover's electrical box. 
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+\datedsubsection{\textbf{Tilt-Sensitive LED Matrix Panel}}{Personal Project, Ongoing}
+\textit{The idea is to 'move' a single lit LED on the panel by physically tilting it. This uses:}
+\begin{itemize}
+  \item Arduino microcontroller for handling the 'smarts and magic'.
+  \item ADXL335 accelerometer for controlling the tilt functionality. 
+  \item 74HC595N shift register (SIPO) for I/O expansion on the Arduino board.
 \end{itemize}
+
+\datedsubsection{\textbf{Hackathons}}{Various}
+\begin{itemize}
+  \item Pebble-facilitated dosage notification service - \textit{SmartMeds}; used C. \hfill Hack the North, 2015
+  \item IMU-based instructor - \textit{Yoga Yoda}; developed business case. \hfill PCH Hardware Hackathon, 2015
+  \item Myo-controlled air drum kit - \textit{DruMyo}; used C++. \hfill hackWaterloo, 2014
+  \item Myo-enabled Solidworks controller; used Lua. \hfill Hack the North, 2014
+\end{itemize}
+
+\begin{multicols}{2}
+
+\section{\faGraduationCap\ Education}
+\textbf{Mechatronics Engineering}\par
+Candidate for BASc\par
+2013 -- Present, Class of 2018\par
+University of Waterloo, Waterloo, ON
+
+\columnbreak
+
+\section{\faBook\ Courses}
+Circuits \hfill 93\% \par
+Sensors \& Instrumentation\par
+Microprocessors \& Digital Logic \hfill 78\% \par
+Computer Structures \& Real-Time Systems
+
+\end{multicols}
 
 \end{document}
