@@ -14,17 +14,17 @@
 
 \RequirePackage[
   a4paper,
-  left=0.5in,
-  right=0.5in,
-  top=0.5in,
-  bottom=0.5in,
+  left=0.75in,
+  right=0.75in,
+  top=0.75in,
+  bottom=0.75in,
   nohead
 ]{geometry}
 
 \RequirePackage{titlesec}
 \RequirePackage{enumitem}
 \setlist{noitemsep} % removes spacing from items but leaves space around the whole list
-%\setlist{nosep} % removes all vertical spacing within and around the list
+\setlist{nosep} % removes all vertical spacing within and around the list
 \setlist[itemize]{topsep=0.25em, leftmargin=1.5pc}
 \setlist[enumerate]{topsep=0.25em, leftmargin=1.5pc}
 \RequirePackage[super]{nth}
@@ -72,4 +72,10 @@
 \newcommand{\company}[2]{
   {\par #1 \hfill #2 \par}
   \vspace{0.5ex}
+}
+\newcommand{\nspace}[0]{
+  \vspace{1mm}
+}
+\newcommand{\nspacen}[0]{
+  \vspace{0.75mm}
 }

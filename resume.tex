@@ -2,22 +2,25 @@
 
 \documentclass{resume}
 \usepackage{comment}
-\usepackage{multicol}
-\usepackage{hyperref} %\hypersetup{colorlinks=false}
+
+%\usepackage{multicol}
+%\begin{multicols}{2}
+%\columnbreak
+%\end{multicols}
+
+\usepackage{hyperref} 
+%\hypersetup{colorlinks=false}
+
 %\usepackage{wrapfig}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
- 
+
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
+%\pagenumbering{gobble} % suppress displaying page number
 
 \name{Oswin Rodrigues}
 %\focus{Hardware}{Embedded}
 
 % {E-mail}{mobilephone}{homepage}
 \contactInfo{orodrigues@uwaterloo.ca}{+1-226-606-6220}{oswinrodrigues}
-% {E-mail}{mobilephone}
-%\basicContactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}
 
 \section{\faWrench\ Tools}
 
@@ -28,23 +31,32 @@
   Python\textperiodcentered
   Ladder Logic\textperiodcentered
   JavaScript\textperiodcentered
-  MATLAB%\textperiodcentered
-  %Assembly\textperiodcentered
-  %VHDL
+  MATLAB\textperiodcentered
+  Assembly\textperiodcentered
+  VHDL
   \item %Circuit:
+  Circuit Design\textperiodcentered
   Arduino\textperiodcentered
   Soldering Iron\textperiodcentered
-  Multimeter \& Oscilloscope\textperiodcentered
   Upverter\textperiodcentered
-  EAGLE
+  EAGLE\textperiodcentered
+  Oscilloscope\textperiodcentered
+  Multimeter
   %\item %3D CAD Experience:
   %Solidworks\textperiodcentered
   %AutoCAD
 \end{itemize}
+\nspace{}
+
+\section{\faGraduationCap\ Education}
+
+\datedsubsection{\textbf{Mechatronics Engineering, Honors}, Candidate for BASc}{2013 -- Present}
+University of Waterloo, Waterloo, ON \hfill Class of 2018\par 
+\nspace{}
 
 \section{\faLineChart\ Experience}
 
-\datedsubsection{\textbf{EDA Engineer Intern}}{May -- Aug 2015}
+\datedsubsection{\textbf{EDA/CAD Engineer Intern}}{May -- Aug 2015}
 \company{\textbf{Upverter Inc.}}{Toronto, ON}
 \textit{Enhancing PCB CAD tool features in software (JavaScript, Python) and hardware avenues.}
 \begin{itemize}
@@ -56,47 +68,53 @@
   \item Corrected book-keeping errors in pin manager for tracking connection mappings.
   \item Facilitated BGA footprint generator's omitting specific letters during row enumeration.
 \end{itemize}
+\nspacen{}
 
-\datedsubsection{\textbf{Research Assistant}}{Feb -- Apr 2014}
+\datedsubsection{\textbf{Neuro-Robotics Lab Research Assistant}}{Feb -- Apr 2014}
 \company{\textbf{University of Waterloo}}{Waterloo, ON}
-\textit{Using ROS-run Turtlebot\textsuperscript{TM} for social navigation research purposes.}
+\textit{Using ROS-run Turtlebot for social navigation research purposes.}
 \begin{itemize}
   \item Wrote C++ and Python nodes to implement basic navigation stack on Turtlebot. 
   \item Published sensor, odometry and transform messages to mobile base.
   \item Tweaked existing open-source code for advanced algorithms: person-detection, SLAM navigation.
   %\item Troubleshot various problems arising due to incomplete-but-improving familiarity with ROS.
 \end{itemize}
+\nspacen{}
 
-\begin{comment}
+%\begin{comment}
 \datedsubsection{\textbf{Mechanical Design Co-op}}{Sep -- Dec 2014}
 \company{\textbf{Prodomax Automation Inc.}}{Barrie, ON}
 \textit{Designing jigs and fixtures in Solidworks for automotive part-assembly stations.}
 \begin{itemize}
-  \item Modeled custom tooling in two stations for assembling a vehicle's seat track mechanism. One inserted an anti-collapse spacer and the other stamp-pressed a bushing.
+  \item Modeled custom tooling in two stations for assembling a vehicle's seat track mechanism. 
+  \item One station inserted an anti-collapse spacer and the other stamp-pressed a bushing.
   \item Detailed and ballooned numerous part and assembly drawings extensively.
 \end{itemize}
-\end{comment}
+%\end{comment}
+\nspace{}
 
 \section{\faFlask\ Projects}
 
 \datedsubsection{\textbf{UW Robotics Team \& WAVE\textsuperscript{1}
 %\footnote{Waterloo Autonomous Vehicles}\
- Lab}}{Jan -- Apr 2015, Sept 2015 -- Present}
+ Lab}}{Jan -- Apr 2015, Sep 2015 -- Present}
 \textsuperscript{1}\textit{Waterloo Autonomous Vehicles}
 \begin{itemize}
-  \item Modified and updated EAGLE schematics and layouts for Arduino motor shield. 
+  \item Modified EAGLE schematics and layouts for Arduino motor shield. 
   \item Soldered different SMT and THT components onto multiple bare shields.
   \item Currently designing and implementing a wireless (RF) e-stop mechanism for racing robot.
   \item Currently revamping and parts-sourcing a Mars Rover's electrical box. 
 \end{itemize}
+\nspacen{}
 
 \datedsubsection{\href{https://github.com/oswinrodrigues/LED-Matrix-And-Accelerometer}{\textbf{Tilt-Sensitive LED Matrix Panel}}}{Personal Project, Ongoing}
-\textit{The idea is to 'move' a single lit LED on the panel by physically tilting it. This uses:}
+\textit{`Moving' a single lit LED on the panel by physically tilting it. This uses:}
 \begin{itemize}
-  \item Arduino microcontroller for handling the 'smarts and magic'.
+  \item Arduino microcontroller for handling the `smarts and magic'.
   \item ADXL335 accelerometer for controlling the tilt functionality. 
   \item 74HC595N shift register (SIPO) for I/O expansion on the Arduino board.
 \end{itemize}
+\nspacen{}
 
 \datedsubsection{\textbf{Hackathons}}{Various}
 \begin{itemize}
@@ -106,22 +124,49 @@
   \item \href{https://github.com/fanwashere/SolidWorksControls}{Myo-enabled Solidworks controller; used Lua. \hfill} Hack the North, 2014
 \end{itemize}
 
-\begin{multicols}{2}
-
-\section{\faGraduationCap\ Education}
-\textbf{Mechatronics Engineering}\par
-Candidate for BASc\par
-2013 -- Present, Class of 2018\par
-University of Waterloo, Waterloo, ON
-
-\columnbreak
+\begin{comment}
+\datedsubsection{\textbf{Open-Ended Course\textsuperscript{2} Project}}{Sep -- Dec 2013}
+\textsuperscript{2}\textit{Mechatronics Engineering, Digital Computation}
+\begin{itemize}
+  \item Built a fully functional robot on the Lego Mindstorms NXT platform.
+  \item 
+\end{itemize}
+\end{comment}
+\nspace{}
 
 \section{\faBook\ Courses}
-\href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE120}{Circuits \hfill 93\%} \par
-\href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE220}{Sensors \& Instrumentation}\par
-\href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE262}{Microprocessors \& Digital Logic \hfill 78\%}\par
-\href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE241}{Computer Structures \& Real-Time Systems}
+\begin{itemize}
+\item \href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE120}{Circuits \hfill 93\%} \par
+\item \href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE220}{Sensors \& Instrumentation \hfill ---}\par
+\item \href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE140}{Data Structures \& Algorithms \hfill 94\%} \par
+\item \href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE262}{Microprocessors \& Digital Logic \hfill 78\%}\par
+\item \href{http://www.ucalendar.uwaterloo.ca/1516/COURSE/course-MTE.html#MTE241}{Computer Structures \& Real-Time Systems \hfill ---}
+\end{itemize}
+\nspace{}
 
-\end{multicols}
+\section{\faPaintBrush\ Non-Technical}
+\begin{itemize}
+\item East Coast Swing
+\item Guitar \& Drums
+\item Discovery Trips
+\item \textit{Naruto Shippuden}
+\item Rap \& Poetry
+\item Basketball
+\end{itemize}
+\begin{comment}
+\begin{itemize}
+  \item \textbf{East Coast Swing}:\par 
+  ``It don't mean a thing if it ain't got that swing" - Irving Mills. This dance form makes it worth getting your two left feet right.
+  \item \textbf{Guitar and Drums}:\par
+  Whether it's playing in front of scores at church or a handful around a bonfire, the jamming experience is truly revitalizing.
+  \item \textbf{Discovery Outings}:\par 
+  Curiosity outdoors gets the best of me, even when it's `just' another trail that I've spotted. Adventure always awaits.
+  \item \textit{\textbf{Naruto Shippuden}}:\par 
+  The sheer number of life lessons I've learned from this anime alone is phenomenal. I remain unashamed and a child at heart forever.
+  \item \textbf{Rap and Poetry}:\par 
+  Words. They're mighty weighty. And the potential for good art to flow from them is why I've come to appreciate and experiment with rap.
+\end{itemize}
+\end{comment}
+\nspace{}
 
 \end{document}
