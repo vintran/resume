@@ -66,7 +66,13 @@
   \vspace{1.5ex}
 }
 \newcommand{\contactInfo}[3]{
-  \centerline{\large{\href{mailto:#1}{\faEnvelopeO}\ {#1}\textperiodcentered \href{tel:#2}{\faPhone}\ {#2}\textperiodcentered \href{https://www.linkedin.com/in/#3}{\faLinkedin}\ \href{https://github.com/#3}{\faGithub}\ {#3}}}
+  \centerline{
+    \large{
+        \href{mailto:#1}{\faEnvelopeO}\ {#1}\textperiodcentered 
+        \href{tel:#2}{\faPhone}\ {#2}\textperiodcentered 
+        \href{https://www.linkedin.com/in/#3}{\faLinkedin}\ \href{https://github.com/#3}{\faGithub}\ {#3}
+    }
+  }
   %\vspace{1.5ex}
 }
 \newcommand{\basicContactInfo}[3]{
