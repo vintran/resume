@@ -9,12 +9,22 @@
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Oswin Rodrigues}
-\program{\faRocket\ 3A Mechatronics Engineering}
-\focus{Hardware}{Embedded}
+\begin{multicols}{3}
+    %\null \vfill
+    \name{Oswin Jonathan}{Rodrigues}\par
+    \vfill \null
+\columnbreak
+    %\null \vfill
+    \program{\textbf{3A Mechatronics Engineering}}\par
+    \focus{Hardware}{Embedded}\par
+    \centerline{\large{Systems}}
+    \vfill \null
+\columnbreak
+    %\null \vfill
+    \contactInfo{orodrigues@uwaterloo.ca}{226 606 6220}{oswinrodrigues}
+    \vfill \null
+\end{multicols}
 
-% {E-mail}{mobilephone}{homepage}
-\contactInfo{orodrigues@uwaterloo.ca}{226 606 6220}{oswinrodrigues}
 
 \section{\faWrench\ Tools}
 
@@ -30,6 +40,7 @@
   C\textperiodcentered 
   C++\textperiodcentered
   Python\textperiodcentered
+  ROS\textperiodcentered
   MATLAB\textperiodcentered
   JavaScript\textperiodcentered
   Ladder Logic
@@ -44,11 +55,11 @@
 
 \section{\faLineChart\ Experience}
 
-\datedsubsection{\textbf{AI / Robotics Intern}}{Winter 2016}
-\company{\textbf{Stealth-mode AI / Robotics Startup}}{Toronto, ON}
+\datedsubsection{\textbf{AI \& Robotics Engineer Intern}}{Winter 2016}
+\company{\textbf{Stealth-mode AI \& Robotics Startup}}{Toronto, ON}
 \textit{Robot-wrangling, with Python, over a distributed communication architecture.}
 \begin{itemize}
-  \item Sourced and integrated - especially by writing drivers - hardware components into system.
+  \item Sourced and integrated hardware components into system, via custom-coded drivers.
   \item Soldered robots' power system boards and tested thoroughly for safety.
 \end{itemize}
 \begin{comment}
@@ -61,9 +72,9 @@
 \company{\textbf{Upverter Inc.}}{Toronto, ON}
 \textit{Enhancing PCB CAD tool features in software (JavaScript, Python) and hardware avenues.}
 \begin{itemize}
+  \item Re-factored features and fire-fought bugs extensively, for empowered user experience.
   \item Created and verified symbols and footprints for 150+ electronic components.
   %\item Implemented component-tagging feature, using pin names to categorize functionality.
-  \item Re-factored features and fire-fought bugs abundantly, for empowered user experience.
 \end{itemize}
 \begin{comment}
   Adjusted prioritization of design rules in layout constraint manager.
@@ -78,7 +89,7 @@
 \textit{Designing jigs and fixtures in Solidworks for automotive part-assembly stations.}
 \begin{itemize}
   \item Modeled custom tooling in two assembly stations for a vehicle's seat track mechanism. % Inserted anti-collapse spacer, stamp-pressed bushing.
-  \item Detailed and ballooned numerous part and assembly drawings extensively.
+  \item Detailed and ballooned numerous part and assembly drawings.
 \end{itemize}
 
 \datedsubsection{\textbf{Neuro-Robotics Lab Research Assistant}}{Winter 2014}
@@ -93,14 +104,15 @@
 
 \section{\faFlask\ Projects}
 
-\datedsubsection{\textbf{UW Robotics Team \& Waterloo Autonomous Vehicles Lab}}{}%{\faCar}
+\datedsubsection{\textbf{UW Robotics Team \& Waterloo Autonomous Vehicles Lab}}{Ongoing}%{\faCar}
 \begin{itemize}
   \item Reviewed and modified EAGLE schematics and layouts for Arduino motor shield on racing robot car.
   \item Soldered SMT and THT components onto three bare PCBs, and probed circuitry subsequently.
   \item Researched, brainstormed and refined design plans for wireless (RF) e-stop mechanism on car.
+  \item Currently executing lab bring-up of new board and deployment on all systems.
 \end{itemize}
 
-\datedsubsection{\href{https://github.com/oswinrodrigues/LED-Matrix-And-Accelerometer}{\textbf{Tilt-Sensitive LED Matrix Panel}}}{}%{\faLightbulbO}
+\datedsubsection{\href{https://github.com/oswinrodrigues/LED-Matrix-And-Accelerometer}{\textbf{Tilt-Sensitive LED Matrix Panel}}}{Winter 2016}%{\faLightbulbO}
 \begin{itemize}
   \item Wrote LED matrix driver that uses two 74HC595N shift registers (SIPO) for I/O expansion.
   \item Wrote IMU - ADXL335 and MPU6050 - driver, including filter to integrate gyro and accelerometer.
@@ -119,7 +131,7 @@
 \begin{multicols}{2}
 
 \section{\faGraduationCap\ Education}
-\textbf{Mechatronics Engineering}\par
+\textbf{Mechatronics Engineering, Honors}\par
 Candidate for BASc\par
 2013 -- Present\par
 Class of 2018\par

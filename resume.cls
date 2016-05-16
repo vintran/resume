@@ -53,24 +53,28 @@
   {\par #1 \hfill #2 \par}%
 }
 
-\newcommand{\name}[1]{
-  \centerline{\Huge{#1}}
+\newcommand{\name}[2]{
+  \raggedright{\huge{{#1}}}\par
   \vspace{1.5ex}
+  \raggedright{\huge{{#2}}}
+  %\vspace{1.5ex}
 }
 \newcommand{\focus}[2]{
-  \centerline{\large{{#1}\textperiodcentered {#2}}}
-  \vspace{1.5ex}
+  \centerline{\large{%\faSearch\  
+  {#1} \& {#2}}}
+  %\vspace{1.5ex}
 }
 \newcommand{\program}[1]{
-  \centerline{\large{{#1}}}
-  \vspace{1.5ex}
+  \centerline{\large{%\faRocket\  
+  {#1}}}
+  %\vspace{0.5ex}
 }
 \newcommand{\contactInfo}[3]{
-  \centerline{
+  \raggedleft{
     \large{
-        \href{mailto:#1}{\faEnvelopeO}\ {#1}\textperiodcentered 
-        \href{tel:#2}{\faPhone}\ {#2}\textperiodcentered 
-        \href{https://www.linkedin.com/in/#3}{\faLinkedin}\ \href{https://github.com/#3}{\faGithub}\ {#3}
+        {#1}\  \href{mailto:#1}{\faEnvelopeO}\par 
+        {#2}\  \href{tel:#2}{\faPhone}\par 
+        {#3}\  \href{https://www.linkedin.com/in/#3}{\faLinkedin}\ \href{https://github.com/#3}{\faGithub}\par
     }
   }
   %\vspace{1.5ex}
