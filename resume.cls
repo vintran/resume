@@ -55,15 +55,15 @@
 
 \newcommand{\name}[1]{
   \centerline{\Huge{#1}}
-  \vspace{1.5ex}
+  \vspace{1.0ex}
 }
 \newcommand{\focus}[2]{
   \centerline{\large{{#1}\textperiodcentered {#2}}}
-  \vspace{1.5ex}
+  \vspace{0.5ex}
 }
 \newcommand{\program}[1]{
   \centerline{\large{{#1}}}
-  \vspace{1.5ex}
+  \vspace{0.5ex}
 }
 \newcommand{\contactInfo}[3]{
   \centerline{
@@ -77,7 +77,7 @@
 }
 \newcommand{\basicContactInfo}[3]{
   \centerline{\large{\faEnvelopeO\ {#1} \textperiodcentered {{\Large\faMobile}\ {#2}}}}
-  \vspace{1.5ex}
+  %\vspace{1.0ex}
 }
 \newcommand{\company}[2]{
   {\par #1 \hfill #2 \par}
