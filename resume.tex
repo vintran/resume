@@ -10,9 +10,7 @@
 \pagenumbering{gobble} % suppress displaying page number
 
 \name{Oswin Rodrigues}
-% REMOVE AFTER GOOGLE
-\program{University of Waterloo, Mechatronics Engineering, 3rd Year}
-%\focus{Hardware}{Embedded Software}
+\focus{Hardware}{Embedded Software}
 
 % {E-mail}{mobilephone}{homepage}
 \contactInfo{orodrigues@uwaterloo.ca}{+1 226 606 6220}{oswinrodrigues}
@@ -45,7 +43,7 @@
   ROS\textperiodcentered
   FPGA Programming\textperiodcentered
   MATLAB\textperiodcentered
-  Ladder Logic\textperiodcentered
+  PLC Ladder Logic\textperiodcentered
   JavaScript%\textperiodcentered
   %Assembly\textperiodcentered
   %VHDL\textperiodcentered
@@ -53,20 +51,30 @@
 
   %\item %3D CAD Experience:
   %AutoCAD\textperiodcentered
-  %Solidworks (Entire work-term, not mentioned below, spent on 3D/2D CAD during Fall 2014)\textperiodcentered
+  %Solidworks\textperiodcentered
 \end{itemize}
 
-% REMOVE AFTER GOOGLE
 \section{\faLineChart\ Internships}
+
+\datedsubsection{\textbf{Hardware Engineer}}{Summer 2017}
+\company{\textbf{Nuvation Energy}}{Waterloo, ON}
+\textit{Fulfilling Integrated Design-to-Manufacturing (IDM) needs for released products.}
+\begin{itemize}
+  \item Executed Altium layout updates, team design reviews and fabbed board inspections.
+  \item Investigated isoSPI bug by sniffing traffic with oscilloscope and consulting IC datasheet.
+  \item Reworked boards extensively, being trained to even solder small 0402 SMT packages.
+  \item Designed and built hipot test fixtures that comply with national safety regulations.
+  \item Served in various other IDM-related avenues as needed, such as: building assemblies and cables, creating wiring diagrams in Visio, running in-house production tests, documenting developments in detail, facilitating environmental certification process.
+\end{itemize}
 
 \datedsubsection{\textbf{Mechatronics Engineer}}{Fall 2016}
 \company{\textbf{KitchenMate Inc.}}{Toronto, ON}
 \textit{Building electrical and software sub-systems in automated home-cooker.}
 \begin{itemize}
-  %\item Detecting stall on DC motors with current sensors or speed encoders.
   \item Designed custom linear encoder sensor with photo-interrupter pair and Python driver.
   \item Sensed heat modes on cooker with hack involving opto-isolator and ADC combination.
-  %\item Using datasheets to source parts and lab bench-top equipment to test circuit.
+  \item Received abundant exposure and insight on the business side of startup operations.
+  %\item Used datasheets to source parts and lab bench-top equipment to test circuit.
 \end{itemize}
 
 \datedsubsection{\textbf{AI \& Robotics Engineer}}{Winter 2016}
@@ -75,6 +83,7 @@
 \begin{itemize}
   \item Soldered robots' power boards and executed safety bringup.
   \item Sourced and integrated components into system with custom-coded drivers.
+  \item Coded behaviour patterns of robots using Finite State Machines (FSMs) in Python.
 \end{itemize}
 \begin{comment}
   Informal intro to ML / N-nets, FK / IK, Grasping, FSM, DB (ES)
@@ -84,8 +93,9 @@
 
 \datedsubsection{\textbf{EDA \& CAD Engineer}}{Summer 2015}
 \company{\textbf{Upverter Inc.}}{Toronto, ON}
+\textit{Creating 150+ components' symbols and footprints; enhancing CAD features using JavaScript.}
 %\textit{Enhancing PCB CAD features in hardware and software avenues.}
-\textit{Creating and verifying symbols and footprints for 150+ electronic components.}
+%\textit{Creating and verifying symbols and footprints for 150+ electronic components.}
 %\begin{itemize}
   %\item Created and verified symbols and footprints for 150+ electronic components.
   %\item Used JavaScript to re-factor features and fire-fight bugs extensively.
@@ -101,25 +111,24 @@
 
 \datedsubsection{\textbf{Junior Mechanical Designer}}{Fall 2014}
 \company{\textbf{Prodomax Automation Inc.}}{Barrie, ON}
-\textit{CAD-ing custom jigs and fixtures in Solidworks for automotive part-assembly stations.}
-\begin{comment}
-\begin{itemize}
-  \item Modeled custom tooling in two assembly stations for a vehicle's seat track mechanism. % Inserted anti-collapse spacer, stamp-pressed bushing.
-  \item Detailed and ballooned numerous part and assembly drawings.
-\end{itemize}
-\end{comment}
+\textit{Designing in Solidworks two stations in assembly line for vehicle's seat track mechanism.}
+%\textit{Modelling in Solidworks custom jigs and fixtures for automotive part-assembly stations.}
+%\begin{itemize}
+  %\item Designed two stations in assembly line for vehicle's seat track mechanism. % Inserted anti-collapse spacer, stamp-pressed bushing.
+  %\item Detailed and ballooned numerous tooling drawings for manufacturing.
+  %\item Worked around design constraints using critical thinking and teamwork.
+%\end{itemize}
 
 \datedsubsection{\textbf{Neuro-Robotics Lab Research Assistant}}{Winter 2014}
 \company{\textbf{University of Waterloo}}{Waterloo, ON}
+%\textit{Setting up and operating ROS-run Turtlebot for social navigation research purposes.}
 \textit{Implementing C++ and Python nodes on ROS-run Turtlebot for navigation research.}
-\begin{comment}
-\begin{itemize}
-  \item Wrote C++ and Python nodes to implement navigation stack on Turtlebot. 
-  \item Published sensor, odometry and transform messages to mobile base.
-  \item Tweaked existing open-source code for advanced algorithms: person-detection, SLAM navigation.
-  \item Gained immense troubleshooting experience associated with accommodating open-source software.
-\end{itemize}
-\end{comment}
+%\begin{itemize}
+  %\item Wrote C++ and Python nodes to implement navigation stack on Turtlebot. 
+  %\item Published sensor, odometry and transform messages to mobile base.
+  %\item Adapted existing open-source code for advanced algorithms: person-detection, SLAM navigation.
+  %\item Gained immense troubleshooting experience associated with accommodating open-source software.
+%\end{itemize}
 
 \section{\faFlask\ Projects}
 
@@ -127,7 +136,7 @@
 \begin{itemize}
   \item Designed and reviewed schematics, layouts and components in EAGLE and DipTrace for motor shields. % on racing robot car.
   \item Spec-ed and sourced sensors for soil-analysis, given engineering and science constraints.
-  \item Soldered SMT and THT parts onto bare PCBs and probed subsequently.
+  \item Soldered SMT and THT parts onto bare PCBs and probed subsequently for bringup.
   %\item Researched design considerations for wireless (RF) e-stop mechanism on robot racing car.
 \end{itemize}
 
@@ -151,9 +160,7 @@
 
 \section{\faGraduationCap\ Education}
 \textbf{Mechatronics Engineering, Honors, BASc.}\par
-%Candidate for BASc\par
 University of Waterloo, Ontario, Canada\par
-%2013 -- Present\par
 Class of 2018
 
 \columnbreak
